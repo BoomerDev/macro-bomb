@@ -1,0 +1,25 @@
+# CODE MUST BE IMPORTED INTO A FILE WITH A .PY FILE EXTENSION
+
+import time
+import pyautogui
+
+print("Welcome to the Macro Bomb!\n")
+typeof = input("\nWould you like the macro to spam a word or spam a key/mouse-click? ('word' for word, 'key' for key, 'click' for a mouse click) ")
+time_between = float(input("\nHow much time should be in between each macro spam? "))
+defin = None
+if(typeof=='key'):
+    defin = input("\nWhat key should be spammed? ")
+if(typeof=='word'):
+    defin = input("\nWhat word would you like to be spammed? ")
+    
+while True:
+    if(typeof=='key')and defin!=None:
+        time.sleep(time_between)
+        pyautogui.press(defin)
+    if(typeof=='word')and defin!=None:
+        time.sleep(time_between)
+        pyautogui.typewrite(defin)
+    if(typeof=='click'):
+        time.sleep(time_between)
+        pyautogui.click()
+    
