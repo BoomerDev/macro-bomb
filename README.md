@@ -11,3 +11,6 @@ If you have selected a word or a key to be spammed, it will ask you what word/ke
 
 When you complete all of these steps, you are all setup and can start using the macro right away.
 P.S: you must keep the terminal windows open while using the macro.
+
+
+Feel free to modify the source code in whatever way you like (it's only like 20 lines)
