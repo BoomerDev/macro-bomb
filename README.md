@@ -1,4 +1,2 @@
 # macro-bomb
-## created by BoomerDev
-
-### **how to use**
+## How to Use:
